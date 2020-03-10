@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Stomach Ulcer Form</title>
+<style type="text/css">
+img
+{
+	margin-top:1.0em;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,h2
+{
+color:#1affff;
+text-align:center;
+}
+form
+{
+text-align:center;
+padding-top: 50px;
+}
+label {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table tr,td
+{
+width:50%;
+ padding: 5px;
+}
+table {
+  border-spacing: 15px;
+}
+.submit {
+  background-color:DodgerBlue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+<img src="images/stomach.jpeg"/ style="height:300px; width:250px">
+	<h1>Stomach Ulcer</h1><br>
+	<h2>Please select the symptoms you may have</h2>	
+	<form method="post" action="stomach.jsp"> 
+	<table style="margin: 0px auto;">
+	<tr>
+			<td><label>Pain During Urination</label></td>
+			<td><input type="checkbox" name="symptom" value="itch" checked value="true" readonly></td>
+	</tr>   
+	<tr>
+	<td><label>Pain Around Genitals</label></td>
+	<td><input type="checkbox" name="symptom" value="pain"></td>
+   </tr>
+   <tr>
+   <td><label>Small Blisters causing sores</label> </td>
+   <td><input type="checkbox" name="symptom" value="water"></td>
+   <tr>
+   <td><label>Fatigue</label></td>
+   <td><input type="checkbox" name="symptom" value="blurry"></td>
+   </tr>
+   <tr>
+   <td><label>Itching</label></td>
+   <td><input type="checkbox" name="symptom" value="eye"></td>
+  	</tr>
+  	<tr>
+   <td><label>Fever</label></td>
+   <td><input type="checkbox" name="symptom" value="discomfort"></td>
+  	</tr>
+  	<tr>
+  	<td><label>Headache</label></td>
+   	<td><input type="checkbox" name="symptom" value="chronic"><br><br></td>
+   	</tr>
+   	<tr>
+     
+   <tr>							
+	<td><label>Your Area:</label></td>
+		
+	 <td><select name="area" required="">
+	 	<option value="" selected>Choose Your Area*</option>
+   		<option value="Adajan">Adajan</option>
+		<option value="CityLight">CityLight</option>
+		<option value="Vesu">Vesu</option>
+		<option value="Rander">Rander</option>
+		<option value="Parlepoint">Parle Point</option>
+		</select><br></td>
+		</table>
+		<input type="submit" class="submit" value="Submit" name="stomach">
+</form>  	
+</body>
+</html>
